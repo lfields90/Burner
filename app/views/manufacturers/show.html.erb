@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="large-12">
+    <h2> <%= @manufacturer.name %> </h2>
+    <h4>Phones</h4>
+
+<% @phones.each do |phone| %>
+  <ul>
+    <li>Name: <%= phone.name %></li>
+    <li>year: <%= phone.year %></li>
+      <% if phone.description %>
+    <li>Description: <%= phone.description %></li>
+      <% end %>
+  </ul>
+<% end %>
+
+<%= link_to "Home", phones_path %>
+<%= link_to "Add a phone", new_phone_path %>
+</div>
+</div>

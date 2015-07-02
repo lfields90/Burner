@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="large-12">
+    <h2> <%= @phone.name %> </h2>
+  <ul>
+    <li>Name: <%= @phone.name %></li>
+    <li>Manufacturer: <%= @manufacturer.name %> </li>
+    <li>Year: <%= @phone.year %></li>
+    <li>Battery: <%= @phone.battery_life %></li>
+    <li>Description: <%=  @phone.description %></li>
+  </ul>
+
+<%= link_to "Home", phones_path %>
+<%= link_to "Manufacturers", manufacturers_path %>
+</div>
+</div>

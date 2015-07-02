@@ -1,0 +1,14 @@
+<div class="large-12">
+  <h1>New Manufacturer</h1>
+  <div class="panel">
+    <%= form_for @manufacturer do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :country %>
+      <%= f.text_field :country %>
+
+      <%= f.submit "Add new manufacturer" %>
+    <%- end -%>
+  </div>
+</div>
